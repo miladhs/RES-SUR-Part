@@ -1,0 +1,20 @@
+* number of wells in file
+5
+* EACH WELL HAS THE FOLLOWING 10 ENTRIES
+* 1. NAME = 6 Characters MAX
+* 2. TYPE = I (injector) P (producer)
+* 3. DIRECTION = X (horizotal well in x-direction) Y (ditto) Z (vertical well)
+* IF DIRECTION = X then
+* 4.-7.  LOC1 = istart, LOC2 = iend, LOC3 = jloc, LOC4 = kloc
+* IF DIRECTION = Y then
+* 4.-7.  LOC1 = iloc, LOC2 = jstart, LOC3 = jend, LOC4 = kloc
+* IF DIRECTION = Z then
+* 4.-7.  LOC1 = iloc, LOC2 = jloc, LOC3 = ktop, LOC4 = kbottom
+* 8.  DW = WELLBORE DIAMETER IN METERS
+* 9.  WF = WELL ANGLE OPEN TO FLOW (fraction between 0 and 1)
+* 10. SKIN = WELLBORE SKIN
+INJ1	I	Z	 15	28	1	17	0.1524	1	0
+PROD1	P	Z	 1	1	1	17	0.1524	1	0
+PROD2	P	Z	 30	1	1	17	0.1524	1	0
+PROD3	P	Z	 1	55	1	17	0.1524	1	0
+PROD4	P	Z	 30	55	1	17	0.1524	1	0
