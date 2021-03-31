@@ -14,6 +14,7 @@ def typeChange(x):
 class StreamLineData:
    def __init__(self):
        self.number=-1
+       self.connectionCheced= False
    def setSL(self,lineI):
        self.startWellName= lineI[FloodDataProp["StartWellName"]]    #or head
     #    self.startWellNum
